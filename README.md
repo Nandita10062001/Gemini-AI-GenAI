@@ -9,9 +9,6 @@ Gemini AI is an AI-based platform that integrates Google Generative AI models (G
 - **Text Embedding**: Convert textual data into embeddings for retrieval and document processing using Google's Text Embedding model.
 - **Ask Me Anything**: Submit questions and receive AI-generated responses using the Gemini Pro model.
 
-## Project Structure
-
-📁 project-root/ │ ├── .env # Contains your API key (not included in version control) ├── main.py # Main Streamlit application code ├── gemini_utility.py # Utility functions to interact with Google Gemini API models ├── requirements.txt # Python dependencies for the project └── README.md # Project description and instructions
 
 
 ## Models Used
