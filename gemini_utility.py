@@ -1,13 +1,13 @@
 import os
 import json
+from dotenv import load_dotenv
 import google.generativeai as genai
 
 working_directory = os.path.dirname(os.path.abspath(__file__))
 
-config_file_path = f"{working_directory}/config.json"
-config_data = json.load(open(config_file_path))
+load_dotenv()
 
-GOOGLE_API_KEY = config_data["GOOGLE_API_KEY"]
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
